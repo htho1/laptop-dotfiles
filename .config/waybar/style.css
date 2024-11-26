@@ -1,0 +1,70 @@
+* {
+	font-family: Noto Sans Mono, sans-serif;
+	font-weight: bold; /* maybe change? */
+}
+
+window#waybar {
+	background-color: transparent;
+}
+window#waybar.empty #window {
+	background-color: transparent;
+}
+
+#workspaces {
+	background-color: transparent;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	margin-left: 25px;
+}
+
+#workspaces button {
+	background-color: transparent;
+	border-radius: 20px;
+	color: #96cdfb;
+}
+
+#workspaces button.active {
+	background-color: #191724;
+}
+
+#clock,
+#battery,
+#wireplumber,
+#window {
+	padding: 0 10px;
+	margin: 10px 5px 10px 5px;
+	border-radius: 20px;
+	background-color: #191724;
+	/*background-color: rgba(25, 25, 36, 0.8);*/
+	/*backdrop-filter: blur(10px);*/
+	color: #96cdfb;
+}
+
+#wireplumber,
+#battery {
+	/*padding-right: 20px;*/
+	margin-right: 0;
+}
+
+#clock {
+	margin-right: 25px;
+}
+
+#workspaces,
+#clock,
+#battery,
+#wireplumber,
+#window {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+tooltip {
+	background: rgba(25, 25, 36, 1);
+	border: 2px solid #96cdfb;
+}
+
+tooltip label {
+	color: #96cdfb;
+}

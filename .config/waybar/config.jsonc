@@ -1,0 +1,25 @@
+{
+	"layer": "top",
+	"modules-left": ["hyprland/workspaces", "hyprland/window"],
+	"modules-right": [/*"cava",*/"wireplumber", "battery", "clock"],
+	"hyprland/window": {
+		"icon": true,
+		"icon-size": 18
+	},
+	"wireplumber": {
+		"format": "{icon} {volume}%",
+		"format-muted": "󰝟 {volume}%",
+		"on-click": "flatpak run com.saivert.pwvucontrol",
+		"max-volume": 150,
+		"format-icons": ["󰖀", "󰕾"]
+	},
+	"battery": {
+		"format": "{icon} {capacity}%",
+		"tooltip-format": "{capacity}% {timeTo}",
+		//"format-icons": ["", "", "", "", ""]
+		"format-icons": ["󰂎", "󰁻", "󰁽", "󰁿", "󰁹"]
+	},
+	"clock": {
+		"tooltip-format": "<tt>{:%a %d %m %Y}\n<small>{calendar}</small></tt>"
+	}
+}
